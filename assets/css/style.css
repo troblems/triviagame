@@ -1,0 +1,16 @@
+body {
+  background-image: url("http://i.imgur.com/8M2V5dc.jpg1");
+}
+p{
+  background-color: #ccd4e2;
+  padding: 20px;
+  width: 500px;
+}
+h1{
+  text-align: center;
+  color: #d895ed;
+  background-color: #b5dff2;
+  width: 325px;
+  margin: auto;
+  border-radius: 15px;
+}
