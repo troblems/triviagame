@@ -1,12 +1,13 @@
 body {
   background-image: url("http://i.imgur.com/8M2V5dc.jpg1");
 }
-p{
+p, .submitBut{
   background-color: #ccd4e2;
-  padding: 20px;
-  width: 500px;
+  width: 600px;
+  margin: auto;
+  text-align: center;
 }
-h1{
+h1 {
   text-align: center;
   color: #d895ed;
   background-color: #b5dff2;

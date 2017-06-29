@@ -6,72 +6,97 @@
 </head>
 <body>
 <h1>Final Fantasy IX Quiz</h1>
-<p>1. What does Garnet call herself after escaping Alexandria Castle?
+<p><br>
+  1. What does Garnet call herself after escaping Alexandria Castle?
   <br>
- <label><input type="radio" name="escape" checked> Canary</label>
-  <label><input type="radio" name="escape"> Dagger</label>
-  <label><input type="radio" name="escape"> Princess</label>
-  <label><input type="radio" name="escape"> Twilight</label>
+ <label><input type="radio" name="escape" checked value = "0"> Canary</label>
+  <label><input type="radio" name="escape" value = "1"> Dagger</label>
+  <label><input type="radio" name="escape" value = "0"> Princess</label>
+  <label><input type="radio" name="escape" value = "0"> Twilight</label>
   <br>
   <br>
 2. What is the name of the band Zidane belongs to at the beginning of the game?
 <br>
-<label><input type="radio" name="band" checked>Tantalus</label>
- <label><input type="radio" name="band">Baku</label>
- <label><input type="radio" name="band" >Blank</label>
- <label><input type="radio" name="band" >Cinna</label>
+<label><input type="radio" name="band" checked value = "1">Tantalus</label>
+ <label><input type="radio" name="band" value = "0">Baku</label>
+ <label><input type="radio" name="band" value = "0">Blank</label>
+ <label><input type="radio" name="band" value = "0">Cinna</label>
  <br>
   <br>
  3. What is the name of the city of darkness in Final Fantasy IX?
  <br>
- <label><input type="radio" name="cities" checked> Burmecia</label>
-  <label><input type="radio" name="cities"> Black Mage Village</label>
-  <label><input type="radio" name="cities"> Lindblum</label>
-  <label><input type="radio" name="cities"> Treno</label>
+ <label><input type="radio" name="cities" checked value = "0"> Burmecia</label>
+  <label><input type="radio" name="cities" value = "0"> Black Mage Village</label>
+  <label><input type="radio" name="cities" value = "0"> Lindblum</label>
+  <label><input type="radio" name="cities" value = "1"> Treno</label>
 <br>
 <br>
   4. What is the name of the creature you ride on in Fossil Roo and Gargan Roo?
   <br>
-  <label><input type="radio" name="creature" checked> Oglop</label>
-   <label><input type="radio" name="creature"> Chocobo</label>
-   <label><input type="radio" name="creature">  Gargant</label>
-   <label><input type="radio" name="creature"> Agares</label>
+  <label><input type="radio" name="creature" checked value = "0"> Oglop</label>
+   <label><input type="radio" name="creature" value = "0"> Chocobo</label>
+   <label><input type="radio" name="creature" value = "1">  Gargant</label>
+   <label><input type="radio" name="creature" value = "0"> Agares</label>
 <br>
 <br>
    5.What is the name of the primary minigame played in Final Fantasy IX?
    <br>
-   <label><input type="radio" name="minigame" checked> Tetra Master</label>
-    <label><input type="radio" name="minigame"> Blitzball</label>
-    <label><input type="radio" name="minigame"> Triple Triad</label>
-    <label><input type="radio" name="minigame"> Chocobo Racing</label>
+   <label><input type="radio" name="minigame" checked value = "1"> Tetra Master</label>
+    <label><input type="radio" name="minigame" value = "0"> Blitzball</label>
+    <label><input type="radio" name="minigame" value = "0"> Triple Triad</label>
+    <label><input type="radio" name="minigame" value = "0"> Chocobo Racing</label>
     <br>
 <br>
     6.What is the name of Freya's lost love?
     <br>
-    <label><input type="radio" name="love" checked> Zidane</label>
-     <label><input type="radio" name="love"> Steiner </label>
-     <label><input type="radio" name="love"> Sir Fratley </label>
-     <label><input type="radio" name="love"> Vivi </label>
+    <label><input type="radio" name="love" checked value = "0"> Zidane</label>
+     <label><input type="radio" name="love" value = "0"> Steiner </label>
+     <label><input type="radio" name="love" value = "1"> Sir Fratley </label>
+     <label><input type="radio" name="love" value = "0"> Vivi </label>
      <br>
 <br>
-     7.
+     7.Wha is the name of the traveling Moogle that you deliver letters for?
      <br>
-     <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
-      <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
-      <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
-      <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+     <label><input type="radio" name="moogle" checked value = "1"> Stiltzkin</label>
+      <label><input type="radio" name="moogle" value = "0"> Mognet</label>
+      <label><input type="radio" name="moogle" value = "0"> Monty</label>
+      <label><input type="radio" name="moogle" value = "0"> Mogki</label>
       <br>
 <br>
      8. At the climax of the game, what is the title of the song playing?
      <br>
-     <label><input type="radio" name="song" checked> "Oeilvert"</label>
-      <label><input type="radio" name="song"> "Not alone"</label>
-      <label><input type="radio" name="song"> "Final Battle"</label>
-      <label><input type="radio" name="song"> "Memories of Life"</label>
+     <label><input type="radio" name="song" checked value = "0"> "Oeilvert"</label>
+      <label><input type="radio" name="song" value = "1"> "Not alone"</label>
+      <label><input type="radio" name="song"value = "0"> "Final Battle"</label>
+      <label><input type="radio" name="song"value = "0"> "Memories of Life"</label>
       <br>
       <br>
     </p>
-<script>
+      <div class="submitBut">
+                <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+                type="submit" value="Submit" />
+          </div>
+
+    <script>
+    /*Start timer
+    Have user input answers
+    Hit submit
+    Suck less because they will probably get the answers wrong
+    Total score
+    Give results
+    Have party
+    */
+
+    function startTimer() {
+	window.timer = setInterval(makeBodyOrange, 12000);
+
+    var = scoreTest /*Totals score at end of test*/
+    var =  /* */
+    var =  /* */
+    var = /* */
+    var =  /* */
+    var =  /* */
+}
   </script>
 </body>
 </html>
