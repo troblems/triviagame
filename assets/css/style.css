@@ -1,17 +1,61 @@
 body {
-  background-image: url("http://i.imgur.com/8M2V5dc.jpg1");
+  background-image: url("http://i.imgur.com/8M2V5dc.jpg2");
+  background-size: cover;
+
 }
 p, .submitBut{
-  background-color: #ccd4e2;
   width: 600px;
   margin: auto;
   text-align: center;
+  background: #ccd4e2;
+  background: -webkit-linear-gradient(left top, #ccd4e2, #4286f4);
+  background: -o-linear-gradient(bottom right, #ccd4e2, ##4286f4);
+  background: -moz-linear-gradient(bottom right, #ccd4e2, #4286f4);
+  background: linear-gradient(to bottom right, #ccd4e2, #4286f4);
 }
+
 h1 {
   text-align: center;
-  color: #d895ed;
-  background-color: #b5dff2;
+  color: #d640ed;
   width: 325px;
   margin: auto;
   border-radius: 15px;
+  background: #ccd4e2;
+  background: -webkit-linear-gradient(left top, #ccd4e2, #4286f4);
+  background: -o-linear-gradient(bottom right, #ccd4e2, ##4286f4);
+  background: -moz-linear-gradient(bottom right, #ccd4e2, #4286f4);
+  background: linear-gradient(to bottom right, #ccd4e2, #4286f4);
 }
+@media screen and (max-width: 980px) {
+	p{
+		width:100%;
+	}
+  h1{
+		width:100%;
+	}
+  submitBut{
+		width:100%;
+	}
+  }
+  @media screen and (max-width: 780px) {
+  	p{
+  		width:100%;
+  	}
+    h1{
+  		width:100%;
+  	}
+    submitBut{
+  		width:100%;
+  	}
+    }
+    @media screen and (max-width: 667px) {
+    	p{
+    		width:100%;
+    	}
+      h1{
+    		width:100%;
+    	}
+      submitBut{
+    		width:100%;
+    	}
+      }
