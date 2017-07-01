@@ -10,13 +10,13 @@
 
 <body>
   <h1>Final Fantasy IX Quiz</h1>
-  <p><br> 1. What does Garnet call herself after escaping Alexandria Castle?
+  <p><br> <div id = "q1">1. What does Garnet call herself after escaping Alexandria Castle?
     <br>
     <label><input type="radio" name="escape" value = "1"> Canary</label>
     <label><input type="radio" name="escape" value = "2"> Dagger</label>
     <label><input type="radio" name="escape" value = "3"> Princess</label>
     <label><input type="radio" name="escape" value = "4"> Twilight</label>
-    <br>
+    <br></div>
     <br> 2. What is the name of the band Zidane belongs to at the beginning of the game?
     <br>
     <label><input type="radio" name="band" value = "1">Tantalus</label>
@@ -78,8 +78,61 @@
 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script>
-  var results = $("input[value=]")
-  for (var i = 0; i < results.length; i++) {
+
+  var q1;
+  var q2;
+  var q3;
+  var q4;
+  var q5;
+  var q6;
+  var q7;
+  var q8;
+
+  var q1 = $("<div>");
+  function checkAnswers(){
+   if (("q1")===2);{
+     $("a1").text("Your answer to question #1 was correct.")
+   } else {
+     $("a1").text("Your answer to question #1 was incorrect, the correct answer was option 2")
+   }
+   if (("q2")===1);{
+     $("a2").text("Your answer to question #2 was correct.")
+   } else {
+     $("a2").text("Your answer to question #2 was incorrect, the correct answer was option 1")
+   }
+   if (("q3")===4);{
+     $("a3").text("Your answer to question #3 was correct.")
+   } else {
+     $("a3").text("Your answer to question #3 was incorrect, the correct answer was option 4")
+   }
+   if (("q4")===3);{
+     $("a4").text("Your answer to question #4 was correct.")
+   } else {
+     $("a4").text("Your answer to question #4 was incorrect, the correct answer was option 3")
+   }
+   if (("q5")===1);{
+     $("a5").text("Your answer to question #5 was correct.")
+   } else {
+     $("a5").text("Your answer to question #5 was incorrect, the correct answer was option 1")
+   }
+   if (("q6")===3);{
+     $("a6").text("Your answer to question #6 was correct.")
+   } else {
+     $("a6").text("Your answer to question #6 was incorrect, the correct answer was option 3")
+   }
+   if (("q7")===1);{
+     $("a7").text("Your answer to question #7 was correct.")
+   } else {
+     $("a7").text("Your answer to question #7 was incorrect, the correct answer was option 2")
+   }
+   if (("q8")===2);{
+     $("a8").text("Your answer to question #8 was correct.")
+   } else {
+     $("a8").text("Your answer to question #8 was incorrect, the correct answer was option 2")
+   }
+};
+
+  var results = $("input[value="2"]");
     /*Start timer
         Have user input answers
         Hit submit
@@ -95,8 +148,30 @@
         var = scoreTest Totals score at end of test*/
 
     //this needs to be adapted to listen for each question section. Also, add jQuery linkage.
-    /*$("body").on("click", ".answer", function(event){
-    });*/
+    $("#escape").on("change", function(event){
+      q1=value;
+    });
+    $("#band").on("change", function(event){
+      q2=value;
+    });
+    $("#cities").on("change", function(event){
+      q3=value;
+    });
+    $("#creature").on("change", function(event){
+      q4=value;
+    });
+    $("#minigame").on("change", function(event){
+      q5=value;
+    });
+    $("#love").on("change", function(event){
+      q6=value;
+    });
+    $("#moogle").on("change", function(event){
+      q7=value;
+    });
+    $("#song").on("change", function(event){
+      q8=value;
+    });
     /*$("submitButton").on("click", function(){
     var q1;
      function submitQuiz() {
@@ -106,25 +181,9 @@
         $("#a1").text("test");
         a1.append(q1); };*/
 
-    /*var q2 = document.getElementById("band");
-
-    var q3 = document.getElementById("cities");
-
-    var q4 = document.getElementById("creature");
-
-    var q5 = document.getElementById("minigame");
-
-    var q6 = document.getElementById("love");
-
-    var q7 = document.getElementById("moogle");
-
-    var q8 = document.getElementById("song");*/
-
       $("#submitButton").click(function(event) {
-      function checkAgain() {
       var radioClick = $("<div>");
       }
-      checkAgain();
     });
     /*$("submitButton").on("click", function(event){
      function submitQuiz() {
