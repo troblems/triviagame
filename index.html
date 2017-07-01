@@ -1,120 +1,137 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Final Fantasy IX Quiz</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+
 </head>
+
 <body>
-<h1>Final Fantasy IX Quiz</h1>
-<p><br>
-  1. What does Garnet call herself after escaping Alexandria Castle?
-  <br>
-  <label><input type="radio" name="escape" value = "1"> Canary</label>
-  <label><input type="radio" name="escape" value = "2"> Dagger</label>
-  <label><input type="radio" name="escape" value = "3"> Princess</label>
-  <label><input type="radio" name="escape" value = "4"> Twilight</label>
-  <br>
-  <br>
-2. What is the name of the band Zidane belongs to at the beginning of the game?
-<br>
- <label><input type="radio" name="band"  value = "1">Tantalus</label>
- <label><input type="radio" name="band" value = "2">Baku</label>
- <label><input type="radio" name="band" value = "3">Blank</label>
- <label><input type="radio" name="band" value = "4">Cinna</label>
- <br>
-  <br>
- 3. What is the name of the city of darkness in Final Fantasy IX?
- <br>
-  <label><input type="radio" name="cities"  value = "1"> Burmecia</label>
-  <label><input type="radio" name="cities" value = "2"> Black Mage Village</label>
-  <label><input type="radio" name="cities" value = "3"> Lindblum</label>
-  <label><input type="radio" name="cities" value = "4"> Treno</label>
-<br>
-<br>
-  4. What is the name of the creature you ride on in Fossil Roo and Gargan Roo?
-  <br>
-  <label><input type="radio" name="creature"  value = "1"> Oglop</label>
-   <label><input type="radio" name="creature" value = "2"> Chocobo</label>
-   <label><input type="radio" name="creature" value = "3">  Gargant</label>
-   <label><input type="radio" name="creature" value = "4"> Agares</label>
-<br>
-<br>
-   5.What is the name of the primary minigame played in Final Fantasy IX?
-   <br>
-   <label><input type="radio" name="minigame"  value = "1"> Tetra Master</label>
+  <h1>Final Fantasy IX Quiz</h1>
+  <p><br> 1. What does Garnet call herself after escaping Alexandria Castle?
+    <br>
+    <label><input type="radio" name="escape" value = "1"> Canary</label>
+    <label><input type="radio" name="escape" value = "2"> Dagger</label>
+    <label><input type="radio" name="escape" value = "3"> Princess</label>
+    <label><input type="radio" name="escape" value = "4"> Twilight</label>
+    <br>
+    <br> 2. What is the name of the band Zidane belongs to at the beginning of the game?
+    <br>
+    <label><input type="radio" name="band" value = "1">Tantalus</label>
+    <label><input type="radio" name="band" value = "2">Baku</label>
+    <label><input type="radio" name="band" value = "3">Blank</label>
+    <label><input type="radio" name="band" value = "4">Cinna</label>
+    <br>
+    <br> 3. What is the name of the city of darkness in Final Fantasy IX?
+    <br>
+    <label><input type="radio" name="cities" value = "1"> Burmecia</label>
+    <label><input type="radio" name="cities" value = "2"> Black Mage Village</label>
+    <label><input type="radio" name="cities" value = "3"> Lindblum</label>
+    <label><input type="radio" name="cities" value = "4"> Treno</label>
+    <br>
+    <br> 4. What is the name of the creature you ride on in Fossil Roo and Gargan Roo?
+    <br>
+    <label><input type="radio" name="creature" value = "1"> Oglop</label>
+    <label><input type="radio" name="creature" value = "2"> Chocobo</label>
+    <label><input type="radio" name="creature" value = "3">  Gargant</label>
+    <label><input type="radio" name="creature" value = "4"> Agares</label>
+    <br>
+    <br> 5.What is the name of the primary minigame played in Final Fantasy IX?
+    <br>
+    <label><input type="radio" name="minigame" value = "1"> Tetra Master</label>
     <label><input type="radio" name="minigame" value = "2"> Blitzball</label>
     <label><input type="radio" name="minigame" value = "3"> Triple Triad</label>
     <label><input type="radio" name="minigame" value = "4"> Chocobo Racing</label>
     <br>
-<br>
-    6.What is the name of Freya's lost love?
+    <br> 6.What is the name of Freya's lost love?
     <br>
-    <label><input type="radio" name="love"  value = "1"> Zidane</label>
-     <label><input type="radio" name="love" value = "2"> Steiner </label>
-     <label><input type="radio" name="love" value = "3"> Sir Fratley </label>
-     <label><input type="radio" name="love" value = "4"> Vivi </label>
-     <br>
-<br>
-     7.What is the name of the traveling Moogle that you deliver letters for?
-     <br>
-     <label><input type="radio" name="moogle"  value = "1"> Stiltzkin</label>
-      <label><input type="radio" name="moogle" value = "2"> Mognet</label>
-      <label><input type="radio" name="moogle" value = "3"> Monty</label>
-      <label><input type="radio" name="moogle" value = "4"> Mogki</label>
-      <br>
-<br>
-     8. At the climax of the game, what is the title of the song playing?
-     <br>
-     <label><input type="radio" name="song" value = "1"> "Oeilvert"</label>
-      <label><input type="radio" name="song" value = "2"> "Not Alone"</label>
-      <label><input type="radio" name="song" value = "3"> "Final Battle"</label>
-      <label><input type="radio" name="song" value = "4"> "Memories of Life"</label>
-      <br>
-      <br>
-    </p>
-      <div class="submitBut">
-                <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
-                type="submit" value="Submit" />
-          </div>
+    <label><input type="radio" name="love" value = "1"> Zidane</label>
+    <label><input type="radio" name="love" value = "2"> Steiner </label>
+    <label><input type="radio" name="love" value = "3"> Sir Fratley </label>
+    <label><input type="radio" name="love" value = "4"> Vivi </label>
+    <br>
+    <br> 7.What is the name of the traveling Moogle that you deliver letters for?
+    <br>
+    <label><input type="radio" name="moogle" value = "1"> Stiltzkin</label>
+    <label><input type="radio" name="moogle" value = "2"> Mognet</label>
+    <label><input type="radio" name="moogle" value = "3"> Monty</label>
+    <label><input type="radio" name="moogle" value = "4"> Mogki</label>
+    <br>
+    <br> 8. At the climax of the game, what is the title of the song playing?
+    <br>
+    <label><input type="radio" name="song" value = "1"> "Oeilvert"</label>
+    <label><input type="radio" name="song" value = "2"> "Not Alone"</label>
+    <label><input type="radio" name="song" value = "3"> "Final Battle"</label>
+    <label><input type="radio" name="song" value = "4"> "Memories of Life"</label>
+    <br id="a1">
+    <br>
+  </p>
 
-    <script>
+  <div class="submitBut">
+  <input class="quizSubmit" id="submitButton" type="submit" value="Submit" />
+  </div>
+  <p>
+    <label id=a1></label>
+
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script>
+  var results = $("input[value=]")
+  for (var i = 0; i < results.length; i++) {
     /*Start timer
-    Have user input answers
-    Hit submit
-    Suck less because they will probably get the answers wrong
-    Total score
-    Give results
-    Have party
+        Have user input answers
+        Hit submit
+        Suck less because they will probably get the answers wrong
+        Total score
+        Give results
+        Have party
 
 
-    function startTimer() {
-	window.timer = setInterval(appnd,12000); jQtimer, push to screen
+        function startTimer() {
+    	window.timer = setInterval(appnd,12000); jQtimer, push to screen
 
-    var = scoreTest Totals score at end of test*/
+        var = scoreTest Totals score at end of test*/
 
-//this needs to be adapted to listen for each question section. Also, add jQuery linkage.
-$("body").on("click", ".answer", function(event){
+    //this needs to be adapted to listen for each question section. Also, add jQuery linkage.
+    /*$("body").on("click", ".answer", function(event){
+    });*/
+    /*$("submitButton").on("click", function(){
+    var q1;
+     function submitQuiz() {
+       if (("q1")===2) {
+        $("answerCheck").text("Your answer to question 1 was q1 , which is correct.");
+      } else {
+        $("#a1").text("test");
+        a1.append(q1); };*/
 
-var q1 = document.getElementById("escape");
+    /*var q2 = document.getElementById("band");
 
-var q2 = document.getElementById("band");
+    var q3 = document.getElementById("cities");
 
-var q3 = document.getElementById("cities");
+    var q4 = document.getElementById("creature");
 
-var q4 = document.getElementById("creature");
+    var q5 = document.getElementById("minigame");
 
-var q5 = document.getElementById("minigame");
+    var q6 = document.getElementById("love");
 
-var q6 = document.getElementById("love");
+    var q7 = document.getElementById("moogle");
 
-var q7 = document.getElementById("moogle");
+    var q8 = document.getElementById("song");*/
 
-var q8 = document.getElementById("song");
-
- function submitQuiz() {
-   if (("q1")===2) {
-
-   }
+      $("#submitButton").click(function(event) {
+      function checkAgain() {
+      var radioClick = $("<div>");
+      }
+      checkAgain();
+    });
+    /*$("submitButton").on("click", function(event){
+     function submitQuiz() {
+         $("#a1").text("test");
+      }
+    });*/
+    /*
    if (("q2")===1) {
 
    }
@@ -136,8 +153,9 @@ var q8 = document.getElementById("song");
    if (("q8")===2) {
 
    }
- }
-
+   answerCheck.append(q1);
+ });*/
   </script>
 </body>
+
 </html>
