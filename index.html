@@ -10,7 +10,7 @@
 
 <body>
   <h1>Final Fantasy IX Quiz</h1>
-  <p><br> <div id = "q1">1. What does Garnet call herself after escaping Alexandria Castle?
+  <p><br>1. What does Garnet call herself after escaping Alexandria Castle?
     <br>
     <label><input type="radio" name="escape" value = "1"> Canary</label>
     <label><input type="radio" name="escape" value = "2"> Dagger</label>
@@ -73,8 +73,6 @@
   <input class="quizSubmit" id="submitButton" type="submit" value="Submit" />
   </div>
   <p>
-    <label id=a1></label>
-
 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script>
@@ -88,20 +86,22 @@
   var q7;
   var q8;
 
-  var q1 = $("<div>");
+  function startTimer() {
+  	window.timer = setTimeout(startTest(), 12000);
+  }
   function checkAnswers(){
    if (("q1")===2);{
-     $("a1").text("Your answer to question #1 was correct.")
+     $("a1").text("Your answer to question #1 was correct.");
    } else {
      $("a1").text("Your answer to question #1 was incorrect, the correct answer was option 2")
-   }
+   };
    if (("q2")===1);{
-     $("a2").text("Your answer to question #2 was correct.")
+     $("a2").text("Your answer to question #2 was correct.");
    } else {
      $("a2").text("Your answer to question #2 was incorrect, the correct answer was option 1")
-   }
+   };
    if (("q3")===4);{
-     $("a3").text("Your answer to question #3 was correct.")
+     $("a3").text("Your answer to question #3 was correct.");
    } else {
      $("a3").text("Your answer to question #3 was incorrect, the correct answer was option 4")
    }
@@ -132,7 +132,7 @@
    }
 };
 
-  var results = $("input[value="2"]");
+//  var results = $("input[value="2"]");
     /*Start timer
         Have user input answers
         Hit submit
@@ -148,6 +148,7 @@
         var = scoreTest Totals score at end of test*/
 
     //this needs to be adapted to listen for each question section. Also, add jQuery linkage.
+function startTest (){
     $("#escape").on("change", function(event){
       q1=value;
     });
@@ -172,6 +173,11 @@
     $("#song").on("change", function(event){
       q8=value;
     });
+    $("#submitButton").click(function(event) {
+//need to have submit output text
+    });
+
+  };
     /*$("submitButton").on("click", function(){
     var q1;
      function submitQuiz() {
@@ -181,10 +187,6 @@
         $("#a1").text("test");
         a1.append(q1); };*/
 
-      $("#submitButton").click(function(event) {
-      var radioClick = $("<div>");
-      }
-    });
     /*$("submitButton").on("click", function(event){
      function submitQuiz() {
          $("#a1").text("test");
